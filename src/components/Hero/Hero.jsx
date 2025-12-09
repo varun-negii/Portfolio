@@ -3,8 +3,6 @@ import "./Hero.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import profile_pic from "./img/profile_pic.jpg";
 
-// import profile_img from "../../assets/profile_img.svg";
-
 const Hero = () => {
   return (
     <div id="hero" className="hero">
@@ -17,14 +15,25 @@ const Hero = () => {
         latest technologies. Passionate about turning ideas into functional,
         user-friendly digital experiences.
       </p>
+
       <div className="hero-action">
+        {/* Connect Button */}
         <div className="hero-connect">
-          {" "}
           <AnchorLink className="anchor-link" offset={50} href="#contact">
-            Connect with me{" "}
+            Connect with me
           </AnchorLink>
         </div>
-        <div className="hero-resume">My resume</div>
+
+        {/* Resume Download Button */}
+        <div className="hero-resume">
+          <a
+            href="Varun_Negi_CV (2).pdf"
+            download="Varun_Negi_CV (2).pdf"
+            className="resume-btn"
+          >
+            My Resume
+          </a>
+        </div>
       </div>
     </div>
   );
